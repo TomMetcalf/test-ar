@@ -19,23 +19,20 @@
         look-at="[gps-camera]"
         scale="120 120 120"
         gps-entity-place="latitude: 51.112224; longitude: -4.175430;"
-        maxDistance="3"
       ></a-text>
       <a-text
         value="This is some other text."
         look-at="[gps-camera]"
         scale="80 80 80"
         gps-entity-place="latitude: 51.112117; longitude: -4.175586;"
-        maxDistance="3"
       ></a-text>
       <a-text
         value="Look the other way."
         look-at="[gps-camera]"
         scale="80 80 80"
         gps-entity-place="latitude: 51.112351; longitude: -4.174846;"
-        maxDistance="3"
       ></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
+      <a-camera gps-camera rotation-reader maxDistance="3"> </a-camera>
     </a-scene>
   </body>
 </html>
