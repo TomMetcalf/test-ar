@@ -10,6 +10,7 @@
       <a-assets>
         <a-asset-item id="bearModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/bear/scene.gltf"></a-asset-item>
         <a-asset-item id="raccoonModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/raccoon/scene.gltf"></a-asset-item>
+        <a-asset-item id="dinosuarModel" src="./stegosaurs_SStenops.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -21,10 +22,10 @@
         <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bearModel" animation-mixer>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-sphere position="0 0 0" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-sphere position="0 0 0" radius="0.5" color="#EF2D5E"></a-sphere>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-cylinder position="0 0 0" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#dinosaurModel" animation-mixer>
       </a-entity>
     </a-scene>
   </body>
